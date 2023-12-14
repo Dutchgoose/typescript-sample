@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "lib": ["ESNext"],
+    "module": "ESNext",
+    "target": "ES6",
+    "moduleResolution": "bundler",
+    "moduleDetection": "force",
+    "declaration": true,
+    "noEmit": true,
+    // "composite": true,
+    "strict": true,
+    "outDir": "./dist",
+    "downlevelIteration": true,
+    "skipLibCheck": true,
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "types": [
+      "node-fetch",
+      "bun-types" // add Bun global
+    ]
+  },
+  "paths": {
+    "@mswjs/*": ["./node_modules/@mswjs/*"]
+  },
+  "include": ["src/lib/**/*.ts", "src/test/**/*.ts", "package.json"]
+}
